@@ -14,7 +14,7 @@ Predicting fair market value for pre-owned cars is essential for both buyers and
 
 - **Source:** [CarDekho Used Car Dataset](https://www.kaggle.com/datasets/manishkr1754/cardekho-used-car-data)
 - **Observations:** 15,411 rows
-- **Target Variable:** `selling_price` (Continuous, INR)
+- **Target Variable:** `selling_price`
 - **Key Features:**
   - **Numerical:** `vehicle_age`, `km_driven`, `mileage`, `engine`, `max_power`, `seats`
   - **Categorical:** `brand`, `model`, `seller_type`, `fuel_type`, `transmission_type`
@@ -79,22 +79,6 @@ Models were evaluated using an 80/20 train-test split:
 
 ---
 
-## 🚀 Getting Started
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/used-car-price-prediction.git
-cd used-car-price-prediction
-```
-
-### 2. Run the Analysis
-Open and execute the Jupyter Notebook:
-```bash
-jupyter notebook model-training-mlr-car-price-prediction.ipynb
-```
-
----
-
 ## 📦 Tech Stack
 
 - **Language:** Python 3.10+
@@ -106,6 +90,6 @@ jupyter notebook model-training-mlr-car-price-prediction.ipynb
 
 ## 🔮 Future Improvements
 
-- [ ] Apply **log transformation** ($\log(1 + y)$) to `selling_price` to stabilize variance and eliminate negative predictions.
+- [ ] Will apply **log transformation** ($\log(1 + y)$) to `selling_price` to stabilize variance and eliminate negative predictions.
 - [ ] Experiment with polynomial feature expansion to capture non-linear depreciation curves.
 - [ ] Benchmark against tree-based ensembles (Random Forest, XGBoost) to model complex feature interactions.
